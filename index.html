@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Montagem de PC com Mais Opções</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    .section {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    select, input[type="checkbox"] {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .submit-btn {
+      padding: 12px 20px;
+      font-size: 16px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .submit-btn:hover {
+      background-color: #218838;
+    }
+
+    .checkbox-group {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+    }
+
+    .checkbox-group label {
+      font-weight: normal;
+    }
+  </style>
+</head>
+<body>
+
+<h1>🛠️ Montagem de Computador com Mais Opções</h1>
+
+<form action="#" method="post">
+
+  <!-- Seção obrigatória -->
+  <div class="section">
+    <h2>🔧 Peças Obrigatórias</h2>
+
+    <fieldset>
+      <legend>Escolha as peças obrigatórias</legend>
+
+      <label for="motherboard">🖥️ Placa-mãe:</label>
+      <select id="motherboard" name="motherboard" required>
+        <option value="">-- Selecione --</option>
+        <option>H310 (Intel 8ª gen) – 🔽 Básico antigo</option>
+        <option>B450 (AM4) – 🔽 Entrada AMD</option>
+        <option>B460 (Intel 10ª gen) – 🔼 Básico moderno Intel</option>
+        <option>B550 (AM4) – 🔼 Custo-benefício AMD</option>
+        <option>Z490 (Intel) – 🔼🔼 Suporte overclock</option>
+        <option>X570 (AM4) – 🔼🔼 Melhor para Ryzen 5000</option>
+        <option>Z690 (LGA 1700) – 🔼🔼 Intel 12ª gen</option>
+        <option>Z790 (LGA 1700) – 🔼🔼🔼 Intel topo de linha</option>
+        <option>X670E (AM5) – 🔼🔼🔼 AMD topo com DDR5</option>
+        <option>sTRX4 (Threadripper) – 🚀 Workstation extrema</option>
+      </select>
+
+      <label for="cpu">🧠 Processador:</label>
+      <select id="cpu" name="cpu" required>
+        <option value="">-- Selecione --</option>
+        <option>Intel Pentium G6400 – 🔽 Muito básico</option>
+        <option>Ryzen 3 3200G – 🔽 Básico com vídeo integrado</option>
+        <option>Intel i3-12100F – 🔼 Entrada moderna</option>
+        <option>Ryzen 5 5600X – 🔼 Bom custo-benefício</option>
+        <option>Intel i5-13600K – 🔼🔼 Ótimo para multitarefa</option>
+        <option>Ryzen 7 5800X3D – 🔼🔼 Excelente para jogos</option>
+        <option>Ryzen 9 7950X – 🔼🔼🔼 Muito núcleos e threads</option>
+        <option>Intel i9-13900K – 🔼🔼🔼 Altíssimo desempenho</option>
+        <option>AMD Threadripper 5975WX – 🚀 Processamento extremo</option>
+      </select>
+
+      <label for="ram">💾 Memória RAM:</label>
+      <select id="ram" name="ram" required>
+        <option value="">-- Selecione --</option>
+        <option>8 GB DDR4 2666 MHz – 🔽 Limitado</option>
+        <option>16 GB DDR4 3200 MHz – 🔼 Padrão atual</option>
+        <option>32 GB DDR5 5200 MHz – 🔼🔼 Alta velocidade</option>
+        <option>64 GB DDR5 6000 MHz – 🔼🔼🔼 Profissional/extremo</option>
+      </select>
+
+      <label for="storage">💽 Armazenamento:</label>
+      <select id="storage" name="storage" required>
+        <option value="">-- Selecione --</option>
+        <option>HDD 1 TB 7200 RPM – 🔽 Espaço, mas lento</option>
+        <option>SSD SATA 480 GB – 🔼 Inicialização rápida</option>
+        <option>SSD NVMe Gen3 1 TB – 🔼🔼 Velocidade superior</option>
+        <option>SSD NVMe Gen4 2 TB – 🔼🔼🔼 Altíssimo desempenho</option>
+      </select>
+
+      <label for="gpu">🎮 Placa de Vídeo (GPU):</label>
+      <select id="gpu" name="gpu" required>
+        <option value="">-- Selecione --</option>
+        <option>Integrada (Intel UHD/Radeon Vega) – 🔽 Somente uso básico</option>
+        <option>GT 1030 – 🔽 Baixo desempenho</option>
+        <option>GTX 1050 Ti – 🔽 Jogos leves</option>
+        <option>GTX 1650 – 🔽 Entry-level gamer</option>
+        <option>RX 6600 – 🔼 Full HD com qualidade</option>
+        <option>RTX 3060 – 🔼🔼 Boa com ray tracing</option>
+        <option>RX 6700 XT – 🔼🔼 Excelente 1440p</option>
+        <option>RTX 4070 Super – 🔼🔼🔼 Quase topo de linha</option>
+        <option>RX 7900 XTX – 🔼🔼🔼 Topo da AMD</option>
+        <option>RTX 4090 – 🚀 Melhor placa do mercado</option>
+      </select>
+
+      <label for="psu">⚡ Fonte de Alimentação:</label>
+      <select id="psu" name="psu" required>
+        <option value="">-- Selecione --</option>
+        <option>500W genérica – 🔽 Risco alto, não recomendada</option>
+        <option>500W 80+ White – 🔽 Básica, pouca eficiência</option>
+        <option>600W 80+ Bronze – 🔼 Mínimo aceitável</option>
+        <option>650W 80+ Gold – 🔼🔼 Boa eficiência e segurança</option>
+        <option>750W 80+ Gold – 🔼🔼 Para setups com GPU média</option>
+        <option>850W 80+ Platinum – 🔼🔼 Alta eficiência</option>
+        <option>1000W 80+ Platinum – 🚀 Para RTX 4090 e OC</option>
+        <option>1200W 80+ Titanium – 🚀🔼 Extremamente confiável e eficiente</option>
+      </select>
+
+      <label for="case">🏠 Gabinete:</label>
+      <select id="case" name="case" required>
+        <option value="">-- Selecione --</option>
+        <option>ITX Compacto – 🔽 Portátil, difícil montagem</option>
+        <option>Mini Tower – 🔽 Espaço e airflow limitados</option>
+        <option>Mid Tower – 🔼 Compatibilidade geral</option>
+        <option>Full Tower – 🔼🔼 Mais espaço e refrigeração</option>
+      </select>
+    </fieldset>
+  </div>
+
+  <!-- Seção opcional -->
+  <div class="section">
+    <h2>🎯 Peças Opcionais</h2>
+    <fieldset>
+      <legend>Selecione acessórios e extras</legend>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="extras[]" value="watercooler"> 💧 Water Cooler – 🔼 Resfriamento silencioso</label>
+        <label><input type="checkbox" name="extras[]" value="cooler_tower"> 🌀 Air Cooler Tower – 🔼 Custo-benefício</label>
+        <label><input type="checkbox" name="extras[]" value="fans_rgb"> 🌈 Fans RGB – 🎨 Estética + airflow</label>
+        <label><input type="checkbox" name="extras[]" value="wifi"> 🌐 Placa Wi-Fi – 🔼 Internet sem fio</label>
+        <label><input type="checkbox" name="extras[]" value="bt"> 📶 Bluetooth – 🔼 Fones, controle, periféricos</label>
+        <label><input type="checkbox" name="extras[]" value="capturecard"> 🎥 Placa de captura – 🔼 Streaming e gravação</label>
+        <label><input type="checkbox" name="extras[]" value="soundcard"> 🔊 Placa de som dedicada – 🔼 Áudio profissional</label>
+        <label><input type="checkbox" name="extras[]" value="ups"> 🔋 No-Break (UPS) – 🔼 Proteção e tempo extra</label>
+        <label><input type="checkbox" name="extras[]" value="hotswap"> 🔄 Gaveta Hotswap – 🔼 Troca rápida de disco</label>
+        <label><input type="checkbox" name="extras[]" value="fancontroller"> 🔧 Controladora de fans – 🔼 Controle manual</label>
+        <label><input type="checkbox" name="extras[]" value="cardreader"> 📂 Leitor de cartões – 🔼 Transferência de mídia</label>
+        <label><input type="checkbox" name="extras[]" value="raid"> 🧮 RAID Controller – 🔼🔼 Segurança e desempenho em discos</label>
+        <label><input type="checkbox" name="extras[]" value="lcd_monitor"> 🖥️ Monitor LCD 24” 60Hz – 🔽 Básico</label>
+        <label><input type="checkbox" name="extras[]" value="gaming_monitor"> ⚡ Monitor 27” 165Hz – 🔼🔼 Para jogos</label>
+        <label><input type="checkbox" name="extras[]" value="mechanical_kb"> ⌨️ Teclado Mecânico – 🔼 Conforto e resposta</label>
+        <label><input type="checkbox" name="extras[]" value="mouse_gamer"> 🖱️ Mouse Gamer – 🔼 Precisão extra</label>
+        <label><input type="checkbox" name="extras[]" value="headset"> 🎧 Headset com microfone – 🔼 Áudio e comunicação</label>
+      </div>
+    </fieldset>
+  </div>
+
+  <button class="submit-btn" type="submit">✅ Finalizar Montagem</button>
+
+</form>
+
+</body>
+</html>
